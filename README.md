@@ -10,22 +10,30 @@ To install, open the Scripts folder via `File->Scripts->Open Scripts Folder`. Si
 
 ## -- Scripts --
 
-### -- Pico Dithering --
+#### -- Pico Dithering --
 
 Converts the canvas to the Pico-8 or Picotron palette, using Floyd-Steinberg dithering to achieve a more accurate image.
 
-### -- Color Compliment --
+#### -- Color Compliment --
 
 This script asks for a single color and returns the HSV color compliment according to the color wheel.
 
-### -- Hue Generator --
+#### -- Hue Generator --
 
 This script asks for two colors and the number of intermediate colors you wish to generate. The script will then give a window with a range of colors between the two that were given.
 
-### -- Shade Generator --
+#### -- Shade Generator --
 
 This script will give a range of shades brighter and darker than the color that is given, ranging from black up to white.
 
-### -- Draw Circle --
+#### -- Draw Circle --
 
 This script will draw a circle at the specified (X, Y) position at a specified radius, using the currently set foreground color.
+
+#### -- Draw Circle --
+
+This script will draw a circle either filled or not at the specified (X, Y) position at a specified radius, using the currently set foreground color.
+
+#### -- Draw Sine --
+
+This script will draw a sine wave across the canvas or within the bounds of a selected area, using the currently set foreground color.
