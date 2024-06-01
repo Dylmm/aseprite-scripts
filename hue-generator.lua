@@ -1,14 +1,15 @@
 -- Aseprite Script to open dialog to select hues between two colors
--- Written by aquova, 2018
+-- Written by aquova, 2018. Modified by dylmm, 2024.
 -- https://github.com/aquova/aseprite-scripts
 
 -- Open dialog, ask user for two colors
 function userInput()
     local dlg = Dialog()
     -- Creates a starting color of black
-    local defaultColor = Color{r=0, g=0, b=0, a=255}
-    dlg:color{ id="color1", label="Choose two colors", color=defaultColor }
-    dlg:color{ id="color2", color=defaultColor }
+    local defaultColor1 = app.fgColor
+	local defaultColor2 = app.bgColor
+    dlg:color{ id="color1", label="Choose two colors", color=defaultColor1 }
+    dlg:color{ id="color2", color=defaultColor2 }
     dlg:slider{ id="num_hues", label="Number of colors to generate: ", min=3, max=9, value=3 }
     dlg:button{ id="ok", text="OK" }
     dlg:button{ id="cancel", text="Cancel" }

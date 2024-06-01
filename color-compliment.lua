@@ -1,12 +1,12 @@
 -- Aseprite Script to show color compliment of given color
--- Written by aquova, 2018
+-- Written by aquova, 2018. Modified by dylmm, 2024.
 -- https://github.com/aquova/aseprite-scripts
 
 -- Open dialog, ask user for color
 function userInput()
     local dlg = Dialog()
     -- Creates a starting color of black
-    local defaultColor = Color{r=0, g=0, b=0, a=255}
+    local defaultColor = app.fgColor
     dlg:color{ id="color", label="Choose a color", color=defaultColor }
     dlg:button{ id="ok", text="OK" }
     dlg:button{ id="cancel", text="Cancel" }
